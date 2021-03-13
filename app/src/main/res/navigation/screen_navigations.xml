@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_navigations"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:startDestination="@id/mainDrugsListFragment">
+    <fragment
+        android:id="@+id/mainDrugsListFragment"
+        android:name="com.drugstracking.fragments.MainDrugsListFragment"
+        android:label="main_drugs_list"
+        tools:layout="@layout/main_drugs_list" >
+        <action
+            android:id="@+id/action_mainDrugsListFragment_to_newPersonFragment"
+            app:destination="@id/newPersonFragment" />
+        <action
+            android:id="@+id/action_mainDrugsListFragment_to_drugsListSettingsFragment"
+            app:destination="@id/drugsListSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPersonFragment"
+        android:name="com.drugstracking.fragments.NewPersonFragment"
+        android:label="new_person"
+        tools:layout="@layout/new_person" >
+        <action
+            android:id="@+id/action_newPersonFragment_to_mainDrugsListFragment"
+            app:destination="@id/mainDrugsListFragment" />
+        <action
+            android:id="@+id/action_newPersonFragment_to_drugsListSettingsFragment"
+            app:destination="@id/drugsListSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drugsListSettingsFragment"
+        android:name="com.drugstracking.fragments.DrugsListSettingsFragment"
+        android:label="drugs_list_settings"
+        tools:layout="@layout/drugs_list_settings" >
+        <action
+            android:id="@+id/action_drugsListSettingsFragment_to_newPersonFragment"
+            app:destination="@id/newPersonFragment" />
+        <action
+            android:id="@+id/action_drugsListSettingsFragment_to_mainDrugsListFragment"
+            app:destination="@id/mainDrugsListFragment" />
+        <action
+            android:id="@+id/action_drugsListSettingsFragment_to_newDrugSettingsFragment"
+            app:destination="@id/newDrugSettingsFragment" />
+        <action
+            android:id="@+id/action_drugsListSettingsFragment_self"
+            app:destination="@id/drugsListSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newDrugSettingsFragment"
+        android:name="com.drugstracking.fragments.NewDrugSettingsFragment"
+        android:label="new_drug_settings"
+        tools:layout="@layout/new_drug_settings" >
+        <action
+            android:id="@+id/action_newDrugSettingsFragment_to_drugsListSettingsFragment"
+            app:destination="@id/drugsListSettingsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Drugs Tracking</string>
+    <string name="add_new_person">Add new person</string>
+    <string name="remove_all_settings">Remove all settings</string>
+    <string name="close_application">Close application</string>
+    <string name="sync_settings_with_server">Sync settings with server</string>
+    <string name="upload_settings">Upload Settings</string>
+    <string name="download_settings">Download settings</string>
+</resources>

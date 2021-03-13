@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_new_person_action"
+        android:title="@string/add_new_person" />
+    <item
+        android:id="@+id/remove_settings_file"
+        android:enabled="false"
+        android:title="@string/remove_all_settings" />
+    <item
+        android:id="@+id/upload_settings"
+        android:enabled="false"
+        android:title="@string/upload_settings" />
+    <item
+        android:id="@+id/download_settings"
+        android:enabled="false"
+        android:title="@string/download_settings" />
+    <item
+        android:id="@+id/close_app"
+        android:title="@string/close_application" />
+</menu>
